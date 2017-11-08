@@ -1,0 +1,60 @@
+<!--&lt;!&ndash; Example of using 100% vs 100vh - don't know where to put it yet &ndash;&gt;-->
+<!--<div style="display: inline-flex">-->
+  <!--<div style="height: 300px; background: red">-->
+    <!--<div style="height: 100%; background: blue; margin: 1em">-->
+      <!--100 percent-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div style="height: 300px; background: red">-->
+    <!--<div style="height: 100vh; background: blue;  margin: 1em">-->
+      <!--100 vh-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+<!-- TODO: just make a dropdown menu to make this easy, and link those to router, that way can use in any size screen device without having to changle lots of shit-->
+<!-- Toolbar with dropdown -->
+<div fxLayout="row"
+     fxLayoutAlign="start start"
+     id="header"
+>
+  <mat-chip-list>
+    <mat-chip><span id="cur-component-span">Current Component: &nbsp; <strong>{{curComponent}}</strong></span></mat-chip>
+  </mat-chip-list>
+
+  <div fxFlex="1 1 auto"></div>
+
+  <div fxFlexAlign="end">
+    <button color="primary" mat-raised-button [matMenuTriggerFor]="menu">
+      Choose Component
+    </button>
+    <mat-menu id="component-menu" #menu="matMenu">
+      <button mat-menu-item [routerLink]="'/home'">
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </button>
+      <button mat-menu-item [routerLink]="'/container-basics'">
+        <mat-icon>assignment</mat-icon>
+        <span>Container Basics</span>
+      </button>
+      <button mat-menu-item [routerLink]="'/justifying-content'">
+        <mat-icon>assignment</mat-icon>
+        <span>Justifying Content</span>
+      </button>
+      <button mat-menu-item [routerLink]="'/flex-layout-gap'">
+        <mat-icon>assignment</mat-icon>
+        <span>Flex Layout Gap</span>
+      </button>
+      <button mat-menu-item [routerLink]="'/aligning-items'">
+        <mat-icon>assignment</mat-icon>
+        <span>Aligning Items</span>
+      </button>
+    </mat-menu>
+  </div>
+
+</div>
+
+
+<router-outlet></router-outlet>
+
+
