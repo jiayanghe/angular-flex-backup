@@ -8,7 +8,7 @@
       Header
     </p>
   </mat-card>
-	
+
 	<div fxLayout="column"
 		 fxFlex="1 1 auto"
 		 fxLayout.gt-sm="row"
@@ -52,7 +52,7 @@
       Header
     </p>
   </mat-card>
-	
+
 	<div fxLayout="row"
 		 fxFlex="1 1 auto"
 	>
@@ -94,11 +94,11 @@
       Header
     </p>
   </mat-card>
-	
+
 	<div fxLayout="row"
 		 fxFlex="1 1 auto"
 	>
-	  <mat-card 
+	  <mat-card
 	  fxFlex="12 1 70%"
 	  fxFlex.lg="60%"
 	  fxFlex.md="60%"
@@ -110,8 +110,8 @@
 	    </p>
 	  </mat-card>
 
-	  <mat-card 
-	  fxFlexOrder="-1" 
+	  <mat-card
+	  fxFlexOrder="-1"
 	  fxFlex="1 1 15%"
 	  fxFlex.lg="20%"
 	  fxFlex.md="20%"
@@ -124,7 +124,7 @@
 	    </p>
 	  </mat-card>
 
-	  <mat-card 
+	  <mat-card
 	  fxFlex="1 1 15%"
 	  fxFlex.lg="20%"
 	  fxFlex.md="20%"
@@ -147,7 +147,7 @@
 
 <br><br>
 
-<h2>3. Change column width when resizing browser window</h2>
+<h2>4. Toggle different class when resizing browser window</h2>
 <div fxLayout="column"
 	 class="container"
 
@@ -157,27 +157,40 @@
       Header
     </p>
   </mat-card>
-	
+
 	<div fxLayout="row"
 		 fxFlex="1 1 auto"
 	>
-	  <mat-card 
-	  fxFlex="12 1 70%" 
-	  class= "test"
+	  <mat-card
+	  fxFlex="12 1 50%"
+
 	  >
-	    <p>
-	      During our time as researchers, we noticed that some QDAS are feature-rich but highly unintuitive, often requiring days or weeks just to get started (much less do anything).
+	    <p
+        ngClass.md="grey"
+        ngClass.sm="yellow"
+        ngClass.xs="orange"
+      >
+	      During our time as researchers, we noticed that some QDAS are feature-rich but highly unintuitive,
+        often requiring days or weeks just to get started (much less do anything).
 	    </p>
 	  </mat-card>
 
-	  <mat-card fxFlexOrder="-1" fxFlex="1 1 15%">
-	    <p>
+	  <mat-card fxFlexOrder="-1" fxFlex="1 1 25%">
+	    <p
+        ngClass.md="grey"
+        ngClass.sm="yellow"
+        ngClass.xs="orange"
+      >
 	      Access anywhere & anytime - Share with collaborators seamlessly
 	    </p>
 	  </mat-card>
 
-	  <mat-card fxFlex="1 1 15%">
-	    <p>
+	  <mat-card fxFlex="1 1 25%">
+	    <p
+        ngClass.md="grey"
+        ngClass.sm="yellow"
+        ngClass.xs="orange"
+      >
 	      Access anywhere & anytime - Share with collaborators seamlessly
 	    </p>
 	  </mat-card>
