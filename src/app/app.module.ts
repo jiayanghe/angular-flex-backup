@@ -28,6 +28,7 @@ import { ContainerBasicsComponent } from './components/container-basics/containe
 import { JustifyingContentComponent } from './components/justifying-content/justifying-content.component';
 import { AligningItemsComponent } from './components/aligning-items/aligning-items.component';
 import { FlexLayoutGapComponent } from './components/flex-layout-gap/flex-layout-gap.component';
+import { HolyGrailLayoutComponent } from './components/holy-grail-layout/holy-grail-layout.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { FlexLayoutGapComponent } from './components/flex-layout-gap/flex-layout
     ContainerBasicsComponent,
     JustifyingContentComponent,
     AligningItemsComponent,
-    FlexLayoutGapComponent
+    FlexLayoutGapComponent,
+    HolyGrailLayoutComponent
   ],
   imports: [
     RouterModule,
