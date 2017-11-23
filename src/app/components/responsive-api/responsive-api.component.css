@@ -8,19 +8,3 @@
 	background: -moz-linear-gradient(#01ab45, #c7e800); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(#01ab45, #c7e800); /* Standard syntax */
 }
-
-.color-grey {
-	background-color: #ccc;
-}
-
-.color-red {
-	color: red;
-}
-
-.color-grey {
-	color: yellow;
-}
-
-.test {
-	background: blue !important; 
-}

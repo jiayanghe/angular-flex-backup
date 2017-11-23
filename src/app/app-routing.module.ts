@@ -6,6 +6,7 @@ import {JustifyingContentComponent} from './components/justifying-content/justif
 import {AligningItemsComponent} from './components/aligning-items/aligning-items.component';
 import {FlexLayoutGapComponent} from './components/flex-layout-gap/flex-layout-gap.component';
 import {HolyGrailLayoutComponent} from './components/holy-grail-layout/holy-grail-layout.component';
+import {ResponsiveApiComponent} from './components/responsive-api/responsive-api.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'aligning-items', component: AligningItemsComponent },
   { path: 'flex-layout-gap', component: FlexLayoutGapComponent },
   { path: 'holy-grail-layout', component: HolyGrailLayoutComponent },
+  { path: 'responsive-api', component: ResponsiveApiComponent },
   { path: '**', component: HomeComponent }
 ];
 @NgModule({
