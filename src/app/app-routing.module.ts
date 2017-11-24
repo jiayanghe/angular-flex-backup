@@ -5,8 +5,10 @@ import {ContainerBasicsComponent} from './components/container-basics/container-
 import {JustifyingContentComponent} from './components/justifying-content/justifying-content.component';
 import {AligningItemsComponent} from './components/aligning-items/aligning-items.component';
 import {FlexLayoutGapComponent} from './components/flex-layout-gap/flex-layout-gap.component';
+import {FlexLayoutWrapComponent} from './components/flex-layout-wrap/flex-layout-wrap.component';
 import {HolyGrailLayoutComponent} from './components/holy-grail-layout/holy-grail-layout.component';
 import {ResponsiveApiComponent} from './components/responsive-api/responsive-api.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -15,6 +17,7 @@ const routes: Routes = [
   { path: 'justifying-content', component: JustifyingContentComponent },
   { path: 'aligning-items', component: AligningItemsComponent },
   { path: 'flex-layout-gap', component: FlexLayoutGapComponent },
+  { path: 'flex-layout-wrap', component: FlexLayoutWrapComponent },
   { path: 'holy-grail-layout', component: HolyGrailLayoutComponent },
   { path: 'responsive-api', component: ResponsiveApiComponent },
   { path: '**', component: HomeComponent }

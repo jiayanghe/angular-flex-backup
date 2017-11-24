@@ -30,6 +30,7 @@ import { AligningItemsComponent } from './components/aligning-items/aligning-ite
 import { FlexLayoutGapComponent } from './components/flex-layout-gap/flex-layout-gap.component';
 import { HolyGrailLayoutComponent } from './components/holy-grail-layout/holy-grail-layout.component';
 import { ResponsiveApiComponent } from './components/responsive-api/responsive-api.component';
+import { FlexLayoutWrapComponent } from './components/flex-layout-wrap/flex-layout-wrap.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ResponsiveApiComponent } from './components/responsive-api/responsive-a
     AligningItemsComponent,
     FlexLayoutGapComponent,
     HolyGrailLayoutComponent,
-    ResponsiveApiComponent
+    ResponsiveApiComponent,
+    FlexLayoutWrapComponent
   ],
   imports: [
     RouterModule,
