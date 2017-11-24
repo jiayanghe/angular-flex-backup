@@ -1,201 +1,148 @@
 <br>
-<h2>1. Changing fxLayout attribite when resizing browser window - Row to Column</h2>
-<div> dfdffd</div>
+<h2>1. Change layout when resizing window</h2>
+
+
+<div class="container"
+   fxLayout="column"
+   fxLayout.gt-sm="row"
+
+>
+  <mat-card fxFlex="12 1 50%">
+    <p>
+      During our time as researchers, we noticed that some QDAS are feature-rich but highly unintuitive,
+      often requiring days or weeks just to get started.
+    </p>
+  </mat-card>
+
+  <mat-card fxFlexOrder="-1" fxFlex="1 1 25%">
+    <p>
+      Access anywhere & anytime - Share with collaborators seamlessly
+    </p>
+  </mat-card>
+
+  <mat-card fxFlex="1 1 25%">
+    <p>
+      Access anywhere & anytime - Share with collaborators seamlessly
+    </p>
+  </mat-card>
+</div>
+
+
+
+<br><br>
+
+<h2>2. Hide/Show column when resizing window</h2>
+
+
 <div
-
+  class="container"
+  fxLayout="row"
+  fxLayoutAlign="center"
 >
-
-	<div class="container"
-     fxLayout="column"
-		 fxFlex="1 1 auto"
-		 fxLayout.gt-sm="row"
-
-	>
-	  <mat-card fxFlex="12 1 70%">
-	    <p>
-	      During our time as researchers, we noticed that some QDAS are feature-rich but highly unintuitive,
-        often requiring days or weeks just to get started.
-	    </p>
-	  </mat-card>
-
-	  <mat-card fxFlexOrder="-1" fxFlex="1 1 15%">
-	    <p>
-	      Access anywhere & anytime - Share with collaborators seamlessly
-	    </p>
-	  </mat-card>
-
-	  <mat-card fxFlex="1 1 15%">
-	    <p>
-	      Access anywhere & anytime - Share with collaborators seamlessly
-	    </p>
-	  </mat-card>
-  </div>
-
-</div>
-
-<br><br>
-
-<h2>2. Hide/Show column when resizing browser window</h2>
-<div fxLayout="column"
-	 class="container"
-
->
-  <mat-card>
+  <mat-card fxFlex="12 1 50%">
     <p>
-      Header
+      During our time as researchers, we noticed that some QDAS are feature-rich but highly unintuitive,
+      often requiring days or weeks just to get started.
     </p>
   </mat-card>
 
-	<div
-    fxLayout="row"
-    fxFlex="1 1 auto"
-    fxLayoutAlign="center"
-	>
-	  <mat-card fxFlex="12 1 70%">
-	    <p>
-	      During our time as researchers, we noticed that some QDAS are feature-rich but highly unintuitive,
-        often requiring days or weeks just to get started.
-	    </p>
-	  </mat-card>
-
-	  <mat-card fxFlexOrder="-1" fxFlex="1 1 15%" fxHide fxHide.gt-xs="false">
-	    <p>
-	      Access anywhere & anytime
-	    </p>
-	  </mat-card>
-
-	  <mat-card fxFlex="1 1 15%" fxHide fxHide.gt-sm="false">
-	    <p>
-	      Access anywhere & anytime
-	    </p>
-	  </mat-card>
-	 </div>
-
-    <mat-card>
+  <mat-card fxFlexOrder="-1" fxFlex="1 1 25%" fxHide fxHide.gt-xs="false"> <!--One way to show the column-->
     <p>
-      Footer
-    </p>
-  </mat-card>
-</div>
-
-<br><br>
-
-<h2>3. Change column width when resizing browser window</h2>
-<div fxLayout="column"
-	 class="container"
-
->
-  <mat-card>
-    <p>
-      Header
+      Access anywhere & anytime
     </p>
   </mat-card>
 
-	<div fxLayout="row"
-		 fxFlex="1 1 auto"
-	>
-	  <mat-card
-	  fxFlex="12 1 70%"
-	  fxFlex.lg="60%"
-	  fxFlex.md="60%"
-	  fxFlex.sm="50%"
-	  fxFlex.xs="40%"
-	  >
-	    <p>
-	      During our time as researchers, we noticed that some QDAS are feature-rich but highly unintuitive,
-        often requiring days or weeks just to get started.
-	    </p>
-	  </mat-card>
-
-	  <mat-card
-	  fxFlexOrder="-1"
-	  fxFlex="1 1 15%"
-	  fxFlex.lg="20%"
-	  fxFlex.md="20%"
-	  fxFlex.sm="25%"
-	  fxFlex.xs="30%"
-
-	  >
-	    <p>
-	      Access anywhere & anytime - Share with collaborators seamlessly
-	    </p>
-	  </mat-card>
-
-	  <mat-card
-	  fxFlex="1 1 15%"
-	  fxFlex.lg="20%"
-	  fxFlex.md="20%"
-	  fxFlex.sm="25%"
-	  fxFlex.xs="30%"
-	  >
-	    <p>
-	      Access anywhere & anytime - Share with collaborators seamlessly
-	    </p>
-	  </mat-card>
-	 </div>
-
-    <mat-card>
+  <mat-card fxFlex="1 1 25%" fxHide fxShow.gt-sm><!--Another way to show the column-->
     <p>
-      Footer
+      Access anywhere & anytime
     </p>
   </mat-card>
-</div>
+ </div>
 
 
 <br><br>
 
-<h2>4. Toggle different class when resizing browser window</h2>
-<div fxLayout="column"
-	 class="container"
+<h2>3. Change column width when resizing window</h2>
+
+<div
+  class="container"
+  fxLayout="row"
+>
+  <mat-card
+  fxFlex="12 1 34%"
+  fxFlex.sm="60%"
+  fxFlex.xs="30%"
+  >
+    <p class="smaller-font">
+      <!-- Smaller font is used to prevent content from flooding the container,
+      the way to change font size dynamically will be introduced in the next section. -->
+      During our time as researchers, we noticed that some QDAS are feature-rich but highly unintuitive
+    </p>
+  </mat-card>
+
+  <mat-card
+  fxFlexOrder="-1"
+  fxFlex="1 1 33%"
+  fxFlex.sm="20%"
+  fxFlex.xs="35%"
+
+  >
+    <p  class="smaller-font">
+      Access anywhere & anytime
+    </p>
+  </mat-card>
+
+  <mat-card
+  fxFlex="1 1 33%"
+  fxFlex.sm="20%"
+  fxFlex.xs="35%"
+  >
+    <p class="smaller-font">
+      Access anywhere & anytime
+    </p>
+  </mat-card>
+ </div>
+
+
+
+<br><br>
+
+<h2>4. Toggle different class when resizing window</h2>
+
+<div
+  class="container"
+  fxLayout="row"
 
 >
-  <mat-card>
-    <p>
-      Header
+  <mat-card
+  fxFlex="12 1 50%"
+
+  >
+    <p
+      ngClass.sm="yellow"
+      ngClass.xs="orange"
+    >
+      During our time as researchers, we noticed that some QDAS are feature-rich but highly unintuitive,
+      often requiring days or weeks just to get started (much less do anything).
     </p>
   </mat-card>
 
-	<div fxLayout="row"
-		 fxFlex="1 1 auto"
-	>
-	  <mat-card
-	  fxFlex="12 1 50%"
-
-	  >
-	    <p
-        ngClass.md="grey"
-        ngClass.sm="yellow"
-        ngClass.xs="orange"
-      >
-	      During our time as researchers, we noticed that some QDAS are feature-rich but highly unintuitive,
-        often requiring days or weeks just to get started (much less do anything).
-	    </p>
-	  </mat-card>
-
-	  <mat-card fxFlexOrder="-1" fxFlex="1 1 25%">
-	    <p
-        ngClass.md="grey"
-        ngClass.sm="yellow"
-        ngClass.xs="orange"
-      >
-	      Access anywhere & anytime - Share with collaborators seamlessly
-	    </p>
-	  </mat-card>
-
-	  <mat-card fxFlex="1 1 25%">
-	    <p
-        ngClass.md="grey"
-        ngClass.sm="yellow"
-        ngClass.xs="orange"
-      >
-	      Access anywhere & anytime - Share with collaborators seamlessly
-	    </p>
-	  </mat-card>
-	 </div>
-
-    <mat-card>
-    <p>
-      Footer
+  <mat-card fxFlexOrder="-1" fxFlex="1 1 25%">
+    <p
+      ngClass.sm="yellow"
+      ngClass.xs="orange"
+    >
+      Access anywhere & anytime - Share with collaborators seamlessly
     </p>
   </mat-card>
-</div>
+
+  <mat-card fxFlex="1 1 25%">
+    <p
+      ngClass.sm="yellow"
+      ngClass.xs="orange"
+    >
+      Access anywhere & anytime - Share with collaborators seamlessly
+    </p>
+  </mat-card>
+ </div>
+
